@@ -8,12 +8,23 @@ const Jsuser = {
     "full name" : "John singh",
     location : "Jaipur",
     email : "John123@gmail.com",
-    [mySym] :"mykey1",
+    [mysys] :"mykey1",
     islogged : false,
     lastlogindays: ["Monday","Saturday"]
 }
 
-console.log(Jsuser.email)
-console.log(Jsuser["email"])
-console.log(Jsuser["full name"] )
-console.log(Jsuser[mySum])
+// console.log(Jsuser.email)
+// console.log(Jsuser["email"])
+// console.log(Jsuser["full name"] )
+// console.log(Jsuser[mysys])
+
+Jsuser.email = "johnabc@gmail.com"
+//Object.freeze(Jsuser)
+Jsuser.email ="john1234@gmail.com"
+//console.log(Jsuser)
+
+Jsuser.greeting = function(){
+    console.log("HelloJS user");
+}
+
+console.log(Jsuser.greeting);
