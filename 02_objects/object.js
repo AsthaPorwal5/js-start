@@ -28,3 +28,4 @@ Jsuser.greeting = function(){
 }
 
 console.log(Jsuser.greeting);
+
